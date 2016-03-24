@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>任务十二</title>
+    <style type="text/css">
+body {
+        font-size: 1.2em;
+        font-family: "微软雅黑"
+    }
+    
+   tbody tr:nth-child(2n+2) {
+        background-color: #CCC;
+    }
+    
+    thead {
+        background-color: #000;
+        color: #FFF;
+    }
+    
+    .top3 {
+        color: red;
+        font-weight: bold;
+    }
+    
+    #change {
+        width: 250px;
+        transition: width 1s;
+        -moz-transition: width 1s;
+        -webkit-transition: width 1s;
+        -o-transition: width 1s;
+    }
+    
+    #change:focus {
+        width: 400px;
+    }
+    
+    #color1 {
+        position: absolute;
+        width: 400px;
+        height: 300px;
+        background-color: red;
+  
+    }
+    
+    #color2 {
+        position: absolute;
+        width: 400px;
+        height: 300px;
+        background-color: green;
+    }
+    
+    #color3 {
+        position: absolute;
+        width: 400px;
+        height: 300px;
+        background-color: blue;
+    }
+    
+    .button {
+        text-align: center;
+        color: #000;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+        background-color: #CCC;
+        float: right;
+    }
+    
+    #button_box {
+        opacity: 0.7;
+        width: 180px;
+        height: 50px;
+        position: relative;
+        right: -220px;
+        bottom: -250px;
+        z-index: 1000;
+    }
+    
+    #color1:target,
+    #color2:target,
+    #color3:target {
+        z-index: 150;
+        animation: mymove 1s 1;
+        -webkit-animation: mymove 1s 1;
+        -moz-animation: mymove 1s 1;
+        -o-animation: mymove 1s 1;
+    }
+    
+    @keyframes mymove {
+        from {
+            left: -100%;
+        }
+        to {
+            left: 0;
+        }
+    }
+    
+    @-moz-keyframes mymove {
+        from {
+            left: -100%;
+        }
+        to {
+            left: 0;
+        }
+    }
+    
+    @-webkit-keyframes mymove {
+        from {
+            left: -100%;
+        }
+        to {
+            left: 0;
+        }
+    }
+    
+    @-o-keyframes mymove {
+        from {
+            left: -100%;
+        }
+        to {
+            left: 0;
+        }
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div style="margin:20px">
+        <table width="400px">
+            <thead>
+                <td width="20%">排名</td>
+                <td width="50%">网站</td>
+                <td width="30%">热度</td>
+            </thead>
+            <tbody>
+                <tr class="top3">
+                    <td>1.</td>
+                    <td>青龙帮</td>
+                    <td>12000</td>
+                </tr>
+                <tr class="top3">
+                    <td>2.</td>
+                    <td>青龙帮</td>
+                    <td>11000</td>
+                </tr>
+                <tr class="top3">
+                    <td>3.</td>
+                    <td>青龙帮</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>青龙帮</td>
+                    <td>9000</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>青龙帮</td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>青龙帮</td>
+                    <td>7000</td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>青龙帮</td>
+                    <td>6000</td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>青龙帮</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>青龙帮</td>
+                    <td>4000</td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>青龙帮</td>
+                    <td>3000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="margin:20px">
+        <input id="change" type="text">
+    </div>
+    <div style="margin:20px">
+        <div id="color1">
+        </div>
+        <div id="color2">
+        </div>
+        <div id="color3">
+        </div>
+        <div id="button_box">
+            <a href="#color3">
+                <div class="button">
+                    <p>3</p>
+                </div>
+            </a>
+            <a href="#color2">
+                <div class="button">
+                    <p>2</p>
+                </div>
+            </a>
+            <a href="#color1">
+                <div class="button">
+                    <p>1</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
