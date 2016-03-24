@@ -1,4 +1,4 @@
-﻿body {
+body {
 	font-family:"微软雅黑"; 
 	background-color:#BDC5B7;
 }
@@ -48,6 +48,10 @@
 #main ul li{
 	list-style-type:none; 
 }
+#main {
+	min-width: 420px;
+	margin-right: 420px;
+}
 .img_box {
 	text-align: center;
 	width: 210px;
@@ -56,6 +60,7 @@
 	border-color: #ccc;
 	padding: 5px;
 	margin: 10px;
+	display: inline-block;
 }
 .img_box img{
 	width: 200px;
@@ -80,7 +85,7 @@
 	border-left: 5px solid #ccc;
 }
 #side_main {
-	width: 600px;
+	width: 400px;
 	position:relative;
 	margin: 0 auto;
 }
@@ -108,4 +113,22 @@
 #submit:hover{
 	background-color: #1340CD;
 	cursor:pointer;
+}
+
+#center {
+	float: left;
+	width: 100%;
+}
+#right {
+	float: left;
+	width: 400px;
+	margin-left:-410px; 
+}
+#right_main{
+	box-shadow: 2px 2px 0 2px #7E8C8B;
+	background-color: #FFF;
+	border: 2px;
+	padding:15px;
+	width: 90%;
+	margin: 20px auto;
 }
