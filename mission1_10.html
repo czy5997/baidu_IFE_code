@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>任务十</title>
+    <style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.children {
+			display: inline-block;
+			width: 150px;
+			border:solid 2px #f00;
+			margin: 20px;
+		}
+
+		#parent {
+			display: flex;
+			flex-flow: row wrap;
+			width: 100%;
+			justify-content:space-between;
+			align-items:center;
+		}
+
+		.one {
+			height: 120px;
+		}
+
+		.two {
+			height: 100px;
+		}
+
+		.three {
+			height: 40px;
+		}
+
+		.four {
+			height: 200px;
+			border:solid 2px #00f;
+		}
+		@media screen and (max-width: 640px){
+			#parent {
+				align-items:flex-start;
+				display: flex;
+				flex-wrap:wrap;
+			}
+			.four {
+				order:-1;
+			}
+			
+		}
+    </style>
+</head>
+
+<body>
+
+    <div id="parent">
+    	<div class="children one"></div>
+    	<div class="children two"></div>
+    	<div class="children three"></div>
+    	<div class="children four"></div>
+    </div>
+
+</body>
+
+</html>
