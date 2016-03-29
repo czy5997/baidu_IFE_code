@@ -37,10 +37,10 @@
         var data = [];
         for (var i = 0; i < list.length; i++) {
             var item = num[i].innerHTML;
-            var index = list[i].innerHTML.indexOf("空");
+            var index = list[i].innerHTML.indexOf("空");//获取城市
             var city = list[i].innerHTML.slice(0, index);
             console.log(city);
-            data.push([city, item]);
+            data.push([city, item]);//创建数组
         }
         console.log(data);
 
